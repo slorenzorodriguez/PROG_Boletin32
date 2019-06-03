@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author clamascabaleiro
+ * @author slorenzorodriguez
  */
 public class Boletin32 {
 
@@ -15,12 +15,12 @@ public class Boletin32 {
          ArrayList<Alumno>alumnos=new ArrayList<>();
         Alumno obx=new Alumno();
         obx.setNota(4);
-        obx.setNombre("Juan");
-        Alumno.Enderezo direccion=obx.new Enderezo("lugar",4);
+        obx.setNombre("javier");
+        Alumno.Enderezo direccion=obx.new Enderezo("enderezo",4);
         obx.setEnderezo(direccion);
         System.out.println(obx.toString());
         alumnos.add(obx);
-        obx.cambiarNota("Juan", alumnos);
+        obx.cambiarNota("javier", alumnos);
         System.out.println(obx.toString());
     }
     }

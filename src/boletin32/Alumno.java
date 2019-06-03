@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author clamascabaleiro
+ * @author slorenzorodriguez
  */
 public class Alumno {
     String nombre;
@@ -49,18 +49,18 @@ public class Alumno {
         int contador=0;
         for(Alumno al:alumno){
             if (al.getNombre().equals(nombre)){
-                al.nota=Integer.parseInt(JOptionPane.showInputDialog(null,"introduzca la nueva nota"));
+                al.nota=Integer.parseInt(JOptionPane.showInputDialog(null,"introduzca nueva nota"));
                 contador++;
             }
         }
         if(contador==0){
-            JOptionPane.showMessageDialog(null,"No hay alumnos llamados "+ nombre);
+            JOptionPane.showMessageDialog(null,"No hay alumnos con nombre:"+ nombre);
         }
     }
     
      @Override
     public String toString() {
-        return "Alumno de Nombre= " + nombre + "\n            nota= " + nota + "\n            enderezo= " + enderezo;
+        return "Nombre Alumno= " + nombre + "\n            nota= " + nota + "\n            enderezo= " + enderezo;
     }
    
     
